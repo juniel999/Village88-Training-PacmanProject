@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+  font-family: "Press Start 2P", cursive;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+}
+
+.row div {
+  height: 20px;
+  width: 20px;
+}
+
+.brick {
+  background-color: rgb(20, 20, 133);
+}
+
+.coin {
+  background: url(./img/coin.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30%;
+}
+
+.cherry {
+  background: url(./img/cherry.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90%;
+}
+
+#pacman {
+  background: url(./img/pacman-right.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 94px;
+  left: 425px;
+  height: 20px;
+  width: 20px;
+}
+
+#ghost1 {
+  background: url(./img/redghost.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+}
+
+#ghost2 {
+  background: url(./img/blueghost.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+}
+
+#ghost3 {
+  background: url(./img/greenghost.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+}
+
+#score {
+  color: white;
+  border: 1px solid white;
+  padding: 4px 10px;
+}
+
+#gameover,
+#success {
+  color: white;
+  position: absolute;
+  display: none;
+}
+
+#gameover {
+  top: 220px;
+}
+
+button {
+  font-family: "Press Start 2P", cursive;
+}
+
+#again {
+  color: white;
+  position: absolute;
+  display: none;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#title h1 {
+  color: white;
+  letter-spacing: 10px;
+}
